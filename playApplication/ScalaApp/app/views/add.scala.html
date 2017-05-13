@@ -1,0 +1,14 @@
+@(message: String, form1: Form[AddressBook])
+
+@main("Welcome to Play 2.1") {
+    
+	<h1>@message</h1>
+	@helper.form(action = routes.Application.send) {
+		@helper.inputText(form1("name"))
+		@helper.inputText(form1("age"))
+		@helper.inputText(form1("tel"))
+		@helper.inputText(form1("address"))
+		<input type="submit">
+
+	}
+}
