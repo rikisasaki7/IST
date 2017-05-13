@@ -1,4 +1,4 @@
-# Ignore Play! working directory #
+# Ignore Play! working directory from internet#
 bin/
 /db
 .eclipse
@@ -15,14 +15,52 @@ server.pid
 /dist/
 .cache
 
-# Eclipse metadata
+#　Ignore Play Project:PlayApp
+/playApplication/PlayApp/logs
+/playApplication/PlayApp/project/project
+/playApplication/PlayApp/project/target
+/playApplication/PlayApp/.target
+/playApplication/PlayApp/tmp
+/playApplication/PlayApp/.history
+/playApplication/PlayApp/dist
+/playApplication/PlayApp/.idea
+/playApplication/PlayApp/*.iml
+/playApplication/PlayApp/out
+/playApplication/PlayApp/.idea_modules
+/playApplication/PlayApp/.classpath
+/playApplication/PlayApp/.project
+/playApplication/PlayApp/RUNNING_PID
+/playApplication/PlayApp/.settings
+/playApplication/PlayApp/.gitignore
+/playApplication/PlayApp/README
+
+#　Ignore Play --Project:ScalaApp
+/playApplication/ScalaApp/logs
+/playApplication/ScalaApp/project/project
+/playApplication/ScalaApp/project/target
+/playApplication/ScalaApp/.target
+/playApplication/ScalaApp/tmp
+/playApplication/ScalaApp/.history
+/playApplication/ScalaApp/dist
+/playApplication/ScalaApp/.idea
+/playApplication/ScalaApp/*.iml
+/playApplication/ScalaApp/out
+/playApplication/ScalaApp/.idea_modules
+/playApplication/ScalaApp/.classpath
+/playApplication/ScalaApp/.project
+/playApplication/ScalaApp/RUNNING_PID
+/playApplication/ScalaApp/.settings
+/playApplication/ScalaApp/.gitignore
+/playApplication/ScalaApp/README
+
+# Ignore Eclipse metadata
 /eclipse/.metadata
 /eclipse/.recommenders
 
-# Eclipse Unnecessary Project
+# Ignore Eclipse Unnecessary Project
 /eclipse/RemoteSystemsTempFiles
 
-# Eclipse Scala Unnecessary Files
+# Ignore Eclipse Scala Unnecessary Files --Project:ScalaTest
 /eclipse/ScalaTest/.cache-main
 /eclipse/ScalaTest/.classpath
 /eclipse/ScalaTest/.project
