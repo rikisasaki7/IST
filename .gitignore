@@ -1,0 +1,29 @@
+# Ignore Play! working directory #
+bin/
+/db
+.eclipse
+/lib/
+/logs/
+/modules
+/project/project
+/project/target
+/target
+tmp/
+test-result
+server.pid
+*.eml
+/dist/
+.cache
+
+# Eclipse metadata
+/eclipse/.metadata
+/eclipse/.recommenders
+
+# Eclipse Unnecessary Project
+/eclipse/RemoteSystemsTempFiles
+
+# Eclipse Scala Unnecessary Files
+/eclipse/ScalaTest/.cache-main
+/eclipse/ScalaTest/.classpath
+/eclipse/ScalaTest/.project
+/eclipse/ScalaTest/.settings
