@@ -1,0 +1,29 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title | Checkyou</title>
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        @* メニュー出力 *@
+        @tag.menu()
+        @* ロゴ出力 *@
+        @tag.logo()
+        <div class="container">
+            <div class="row">
+                @* エラーメッセージなど出力 *@
+                @tag.flashMessage()
+                <div class="content">
+                    @* ページ内コンテンツ出力 *@
+                    @content
+                </div>
+            </div>
+        </div>
+        @* フッター出力 *@
+        @tag.footer()
+    </body>
+</html>
