@@ -9,6 +9,7 @@ import anorm._
 
 object Application extends Controller {
 
+
   val form1 = Form(
         mapping(
             "id" -> ignored(NotAssigned:Pk[Long]),
