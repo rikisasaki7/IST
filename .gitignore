@@ -65,3 +65,10 @@ server.pid
 /eclipse/ScalaTest/.classpath
 /eclipse/ScalaTest/.project
 /eclipse/ScalaTest/.settings
+
+# Ignore Eclipse Java Unnecessary Files --Servers
+/eclipse/Servers
+
+# Ignore Eclipse Java Unnecessary Files --Project:ForStudySpring
+/eclipse/ForStudySpring/target
+
