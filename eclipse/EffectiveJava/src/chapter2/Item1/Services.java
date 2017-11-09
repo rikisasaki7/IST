@@ -16,15 +16,18 @@ public class Services {
 	// インスタンス化を自制
 	private Services(){}
 	
-	// サービス名をサービスと対応づける
+	/** サービス名をサービスと対応づける */
 	private static final Map<String, Provider> providers = 
 			new ConcurrentHashMap<String, Provider>();
 	public static final String DEFAULT_PROVIDER_NAME = "<def>";
 	public static final String DEFAULT_PROVIDER_SOMESTRING = "<sasaki>";
+	/** デフォルトのプロバイダー */
+	public static final TestProvider DEFAULT_TEST_PROVIDER = new TestProvider();
+	/** デフォルトのプロバイダーをstaticイニシャライザで登録 */
 	
 	// プロバイダー登録API
-	public static void registerDefaultProvider(Provider p){
-		registerProvider(DEFAULT_PROVIDER_NAME, p);
+	public static void registerDefaultProvider(){
+		registerProvider(DEFAULT_PROVIDER_NAME, DEFAULT_TEST_PROVIDER);
 	}
 	public static void registerProvider(String name, Provider p){
 		providers.put(name, p);

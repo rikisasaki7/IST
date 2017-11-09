@@ -78,16 +78,18 @@ public class Item1 {
 		System.out.println(list.contains(falseItem1));
 		
 		// せっかくだからService関連を使って見る
+		// デフォルトプロバイダーを登録
+		Services.registerDefaultProvider();
 		// プロバイダーを作成
 		TestProvider tp = new TestProvider();
 		// プロバイダー登録APIでプロバイダーを登録
-		Services.registerDefaultProvider(tp);
+		Services.registerProvider("extend", tp);
 		// サービスアクセスAPIでサービスを使用　その１
 		Service s = Services.newInstance();
 		System.out.println(s.writeString("yes"));
 		
 		// サービスアクセスAPIでサービスを使用　その２
-		Service ds = Services.getInstance(Services.DEFAULT_PROVIDER_NAME, Services.DEFAULT_PROVIDER_SOMESTRING);
+		Service ds = Services.getInstance("extend", Services.DEFAULT_PROVIDER_SOMESTRING);
 		System.out.println(ds.writeString("sasakisasaki!!"));
 
 	}
