@@ -1,7 +1,7 @@
 /**
  * 
  */
-package chapter2.Item1;
+package chapter2.item1;
 import java.util.Collections;
 import java.util.List;
 

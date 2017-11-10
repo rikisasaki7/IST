@@ -1,7 +1,7 @@
 /**
  * 
  */
-package item2;
+package chapter2.item2;
 
 /**
  * @author Riki

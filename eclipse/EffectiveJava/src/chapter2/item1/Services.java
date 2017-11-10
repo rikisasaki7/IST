@@ -1,7 +1,7 @@
 /**
  * 
  */
-package chapter2.Item1;
+package chapter2.item1;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
