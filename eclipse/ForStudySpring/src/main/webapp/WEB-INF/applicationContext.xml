@@ -4,10 +4,14 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
-
 	<!--  userRepository -->
 	<bean id="userRepository" class="com.impl.repositories.UserRepositoryImpl" />
 	<!--  passwordEncoder -->
-	<bean id="passwordEncoder" class="com.impl.repositories.UserRepositoryImpl" />
-	
+	<bean id="passwordEncoder" class="com.impl.utilities.BCryptPasswordEncoder" />
+	<!--  userService -->
+ 	<bean id="userService" class="com.impl.services.UserServiceImpl">
+		<constructor-arg ref="userRepository" />
+		<constructor-arg ref="passwordEncoder" />
+	</bean>
+
 </beans>

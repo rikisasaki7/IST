@@ -1,12 +1,8 @@
-/**
- * 
- */
 package chapter2.item1;
 
 /**
  * @author Riki
  * テスト用に作成したService
- *
  */
 public class TestService implements Service {
 	

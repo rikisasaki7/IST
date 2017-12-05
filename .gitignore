@@ -72,3 +72,5 @@ server.pid
 # Ignore Eclipse Java Unnecessary Files --Project:ForStudySpring
 /eclipse/ForStudySpring/target
 
+# Ignore Eclipse setting File --Project:EffectiveJava
+/eclipse/EffectiveJava/.settings/

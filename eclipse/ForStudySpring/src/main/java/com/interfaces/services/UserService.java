@@ -1,5 +1,7 @@
 package com.interfaces.services;
 
+import org.springframework.stereotype.Service;
+
 import com.entities.User;
 
 public interface UserService {

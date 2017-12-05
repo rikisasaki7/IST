@@ -26,6 +26,7 @@ import com.interfaces.utilities.PasswordEncoder;
 public class AppConfig {
 	
 	/**
+	 * JavaベースConfiguration。@Beanを指定。
 	 * Beanの定義を行う。
 	 * メソッド名がBean名、戻り値がインジェクションされるインスタンスとなる。
 	 * @author Riki
@@ -40,12 +41,20 @@ public class AppConfig {
 		return new BCryptPasswordEncoder();
 	}
 	
-	@Bean
-	UserService userService(){
-		return new UserServiceImpl(userRepository(), passwordEncoder());
-	}
-//	こちらでも可
-//	UserService userService(UserRepository userRepository, PasswordEncoder passwordEncoder){
-//		return new UserServiceImpl(userRepository, passwordEncoder);
+//	@Bean
+//	UserService userService(){
+//		return new UserServiceImpl(userRepository(), passwordEncoder());
 //	}
+	// 
+	/**
+	 * 他のコンポーネントを参照する場合、こっち。↑の引数なしでも問題なし。
+	 * @author Riki
+	 * @param userRepository
+	 * @param passwordEncoder
+	 * @return UserServiceImpl
+	 */
+	@Bean
+	UserService userService(UserRepository userRepository, PasswordEncoder passwordEncoder){
+		return new UserServiceImpl(userRepository, passwordEncoder);
+	}
 }
