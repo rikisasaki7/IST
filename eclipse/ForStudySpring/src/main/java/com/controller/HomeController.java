@@ -44,7 +44,7 @@ public class HomeController {
 //																									   //パッケージ名以下をコンポーネントスキャンする。
 //		context = new ClassPathXmlApplicationContext("/WEB-INF/applicationContext.xml"); // XMLベースコンフィギュレーションを使用する方法。
 //																		 					    // xmlがBean定義として使用される。
-		ServletContext cs
+//		ServletContext cs
 		File contextXml = new File("applicationContext.xml");
 		System.out.println("contextXML: " + contextXml);
 		System.out.println("contextXML: " + contextXml.getPath());
