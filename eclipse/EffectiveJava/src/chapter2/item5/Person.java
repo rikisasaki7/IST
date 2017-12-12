@@ -65,6 +65,7 @@ public class Person {
 	/**
 	 * ベビーブームか否かを判定するロジックに使用するインスタンスを
 	 * staticイニシャライザで初期化します。
+	 * 一度きり生成・初期化すれば良いフィールドはstaticイニシャライザで初期化すると良い
 	 */
 	static {
 		Calendar gmtCal = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
@@ -84,4 +85,20 @@ public class Person {
 		return birthDate.compareTo(BOOM_START) >= 0 && // 大きければ１、等しければ０、小さければ−１をreturnする
 				   birthDate.compareTo(BOOM_END)   <  0;
 	}
+	/*
+	 * その他不必要にインスタンスを生成するケース
+	 * オートボクシングとアンボクシング
+	 * sumをLongとしているため、forでループする回数だけ新しいLongインスタンスが生成されてしまい、
+	 * 非常に処理速度が遅くなる。※正確にはsumにlong iを加算する分だけインスタンスが生成される。
+	 * →不要なオートボクシングやアンボクシングはしないこと！
+	 */
+	public static void main(String args[]){
+//		Long sum = 0L; // 望ましくない。
+		long sum = 0L; // 望ましい。不要なオートボクシングはしない
+		for(long i = 0;i<Integer.MAX_VALUE;i++){
+			sum += i;
+		}
+		System.out.println(sum);
+	}
+	
 }
