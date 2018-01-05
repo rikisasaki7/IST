@@ -4,7 +4,6 @@ package chapter7
 object Displacement extends App {
 
   println("---変位 不変-----")
-  println("aaaa")
 
   // 型引数　不変
   class Holder[T](var data: T)
