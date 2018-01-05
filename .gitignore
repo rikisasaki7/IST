@@ -62,9 +62,9 @@ server.pid
 
 # Ignore Eclipse Scala Unnecessary Files --Project:ScalaTest
 /eclipse/ScalaTest/.cache-main
-/eclipse/ScalaTest/.classpath
-/eclipse/ScalaTest/.project
-/eclipse/ScalaTest/.settings
+# /eclipse/ScalaTest/.classpath
+# /eclipse/ScalaTest/.project
+# /eclipse/ScalaTest/.settings
 
 # Ignore Eclipse Java Unnecessary Files --Servers
 /eclipse/Servers
