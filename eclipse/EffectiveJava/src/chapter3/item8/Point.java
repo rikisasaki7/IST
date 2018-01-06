@@ -12,6 +12,7 @@ import java.util.Set;
  * ２．対称的
  * ３．推移的　＜－このクラスではこれ
  * ４．整合的　＜－
+ * ５．非Null性
  */
 public class Point {
 	private final int x;

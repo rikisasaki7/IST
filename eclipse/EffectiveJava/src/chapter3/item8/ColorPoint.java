@@ -12,6 +12,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * ２．対称的
  * ３．推移的　＜－このクラスではこれ
  * ４．整合的
+ * ５．非Null性
  * 既存クラスに新規に値要素（色）を追加するケースを考える
  * このクラスは全てNGケース。OKケースは以下
  * @see /EffectiveJava/src/chapter3/item8/CompositionColorPoint

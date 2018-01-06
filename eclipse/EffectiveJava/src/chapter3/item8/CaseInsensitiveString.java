@@ -12,6 +12,7 @@ import java.util.List;
  * ２．対称的　＜－このクラスではこれ
  * ３．推移的
  * ４．整合的
+ * ５．非Null性
  */
 public final class CaseInsensitiveString {
 
