@@ -74,3 +74,8 @@ server.pid
 
 # Ignore Eclipse setting File --Project:EffectiveJava
 /eclipse/EffectiveJava/.settings/
+
+# Ignore Eclipse Struts Project
+/eclipse/StrutsTest/WebContent/WEB-INF/lib
+/eclipse/StrutsTest/build
+/eclipse/StrutsTest/.settings
