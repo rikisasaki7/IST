@@ -19,6 +19,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class ColorPoint extends Point {
 
+	@SuppressWarnings("unused")
 	private Color color;
 	/** デフォルトコンストラクタ */
 	public ColorPoint(int x, int y, Color color){
